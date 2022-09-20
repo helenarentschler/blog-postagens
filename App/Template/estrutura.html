@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            color: rgb(32, 33, 33);
+            font-family: Helvetica, sans-serif;
+            font-size: 16px;
+            background-color: rgb(186, 255, 232);
+        }
+
+        a {
+            color: rgb(32, 33, 33);
+            text-decoration: none;
+        }
+
+        a:hover {
+            border-bottom: 2px solid;
+        }
+
+        h1 {
+            margin-bottom: 25px;
+            font-size: 32px;
+        }
+
+        #corpo {
+            width: 1000px;
+            background-color: rgb(255, 255, 255);
+            margin: 0 auto;
+            border-left: 4px solid rgb(70, 255, 193);
+            border-right: 4px solid rgb(70, 255, 193);
+        }
+
+        #topo {
+            padding: 25px;
+            border-bottom: 2px solid rgb(135, 191, 172);
+        }
+
+        #topo a {
+            font: 20px;
+        }
+
+        .flutuacao-direita {
+            float: right;
+        }
+
+        #conteudo {
+            background-color: rgb(255, 255, 255);
+            padding: 25px;
+        }
+        
+        #conteudo article {
+            margin-bottom: 20px;
+        }
+
+        #conteudo article h2 {
+            margin-bottom: 10px;
+        }
+
+        #conteudo article p {
+            color: rgb(82, 97, 92);
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="corpo">
+        <header id="topo">
+            <nav>
+                <a href="http://localhost/blog-postagens/">Home</a> |
+                <a href="http://localhost/blog-postagens/?pagina=sobre">Sobre</a>
+                <a class="flutuacao-direita" href="http://localhost/blog-postagens/?pagina=admin&metodo=index">Admin</a>
+            </nav>
+        </header>
+        <main id="conteudo">
+            {{area_dinamica}}
+        </main>
+    </div>
+</body>
+</html>
